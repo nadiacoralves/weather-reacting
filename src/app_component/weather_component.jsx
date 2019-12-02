@@ -1,20 +1,26 @@
 import React from "react";
 import "./weather.css";
+import axios from "axios";
 
 const Weather = props => {
+  const apiKey = "8cce113d0fdd08b0728bb9de122a7c47";
   return (
-    <div className="container-md col-7 rounded-lg shadow-lg">
+    <div className="container-md col-4 rounded-lg shadow-lg">
       <form>
         <div className="row">
-          <div className="col-9">
+          <div className="col-7 mt-25px">
             <input
               type="search"
               placeholder="Enter city..."
               className="form-control"
             />
           </div>
-          <div className="col-3">
-            <input type="submit" value="Search" className="btn btn-primary" />
+          <div className="col-1">
+            <input
+              type="submit"
+              value="Search"
+              className="btn btn-outline-secondary"
+            />
           </div>
         </div>
       </form>
@@ -30,7 +36,9 @@ const Weather = props => {
             </h5>
           </div>
         </div>
-        <h1 className="py-2">25°</h1>
+        <h1 className="py-2" id="temperature">
+          25°
+        </h1>
 
         {/** show max and min temp */}
         {minMaxTemp(17, 25)}

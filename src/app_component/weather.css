@@ -1,3 +1,15 @@
+li {
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 25px;
+  text-align: left;
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+}
+
 .container-md {
   background-image: linear-gradient(
     to top,
@@ -7,12 +19,43 @@
   );
   text-align: center;
   font-family: sans-serif;
+  font-weight: 400;
   color: #4e4e4e;
-  margin: 25px 10px 25px 10px;
+  margin: 25px auto;
+  min-width: 300px;
 }
 
-li {
-  text-decoration: none;
+.container-md h1 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#temperature {
+  font-size: 50px;
+}
+
+.container-md h4 {
+  text-transform: capitalize;
+}
+
+.date {
+  color: #949494;
+}
+
+.form-control {
+  opacity: 0.25;
+  display: inline;
+  border-radius: 5px;
+  margin: 25px;
+}
+
+.btn {
+  opacity: 0.9;
+  margin: 25px;
+}
+
+.cards {
+  margin: 25px;
 }
 
 @media (min-width: 576px) {
