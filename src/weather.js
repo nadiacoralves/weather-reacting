@@ -2,8 +2,7 @@ import React from "react";
 import "./weather.css";
 import axios from "axios";
 
-const Weather = props => {
-  const apiKey = "8cce113d0fdd08b0728bb9de122a7c47";
+export default function Weather() {
   return (
     <div className="container-md col-4 rounded-lg shadow-lg">
       <form>
@@ -27,8 +26,9 @@ const Weather = props => {
       <div className="row">
         <ul className="date">Monday, 07:00</ul>
       </div>
-      <div className="cards">
+      <div className="card bg-transparent">
         <h1>New York</h1>
+
         <div className="row">
           <div className="col-12">
             <h5 className="py-4">
@@ -36,34 +36,26 @@ const Weather = props => {
             </h5>
           </div>
         </div>
-        <h1 className="py-2" id="temperature">
-          25°
-        </h1>
-
-        {/** show max and min temp */}
-        {minMaxTemp(17, 25)}
+        <div className="row">
+          <h1 className="col-12 py-2" id="temperature">
+            25°
+          </h1>
+        </div>
+        <h3 className="col-12">
+          {" "}
+          <span className="min">17°</span> <span className="max">25°</span>{" "}
+        </h3>
         <h4 className="py-3">Slow Rain</h4>
       </div>
       <div className="row">
-        <div className="col-6">
+        <div className="col-12">
           <ul>
             <li>Percepitation: 15%</li>
             <li>Humidity: 72%</li>
-            <li>Wind: 13 km/h</li>
+            <li>Wind:13 km/h</li>
           </ul>
         </div>
       </div>
     </div>
   );
-};
-
-function minMaxTemp(min, max) {
-  return (
-    <h3>
-      <span className="px-4">{min}°</span>
-      <span className="px-4">{max}°</span>
-    </h3>
-  );
 }
-
-export default Weather;
