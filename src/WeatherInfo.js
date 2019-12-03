@@ -6,7 +6,7 @@ export default function WeatherInfo(props) {
     <div className="WeatherInfo">
       <div className="row">
         <ul className="date">
-          <FormattedDate date={props.data.date} />{" "}
+          <FormattedDate date={props.data.date} />
         </ul>
       </div>
       <div className="card bg-transparent">
