@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./weather.css";
 import axios from "axios";
-import FormattedDate from "./FormattedDate";
+import WeatherInfo from "./WeatherInfo";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -43,42 +43,7 @@ export default function Weather(props) {
             </div>
           </div>
         </form>
-        <div className="row">
-          <ul className="date">
-            <FormattedDate date={weatherData.date} />{" "}
-          </ul>
-        </div>
-        <div className="card bg-transparent">
-          <h1>{weatherData.city}</h1>
-
-          <div className="row">
-            <div className="col-12">
-              <h5 className="py-4">
-                <i className={weatherData.icon}></i>
-              </h5>
-            </div>
-          </div>
-          <div className="row">
-            <h1 className="col-12 py-2" id="temperature">
-              {weatherData.temperature}
-            </h1>
-          </div>
-          <h3 className="col-12">
-            {" "}
-            <span className="min">{weatherData.min}°</span>{" "}
-            <span className="max">{weatherData.max}°</span>{" "}
-          </h3>
-          <h4 className="py-3">{weatherData.description}</h4>
-        </div>
-        <div className="row">
-          <div className="col-12">
-            <ul>
-              <li>Percepitation: {weatherData.percipitation}%</li>
-              <li>Humidity: {weatherData.humidity}%</li>
-              <li>Wind:{weatherData.wind} km/h</li>
-            </ul>
-          </div>
-        </div>
+        <WeatherInfo info={weatherData} />
       </div>
     );
   } else {
