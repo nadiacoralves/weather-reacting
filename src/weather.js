@@ -5,9 +5,10 @@ import axios from "axios";
 export default function Weather() {
   const [ready, setReady] = useState(false);
   const [temperature, setTemperature] = useState(null);
-  function showTemperature(response) {
+  function handleResponse(response) {
     console.log(response.data);
     setTemperature(Math.round(response.data.main.temp));
+    setReady(true);
   }
 
   if (ready) {
@@ -46,7 +47,7 @@ export default function Weather() {
           </div>
           <div className="row">
             <h1 className="col-12 py-2" id="temperature">
-              25°
+              {temperature}
             </h1>
           </div>
           <h3 className="col-12">
@@ -69,9 +70,10 @@ export default function Weather() {
       </div>
     );
   } else {
-    const apiKey = "8cce113d0fdd08b0728bb9de122a7c47";
+    const apiKey = "75971bce8cc4dd2982b0a9a7a6fa8946";
     let city = "New York";
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&${apiKey}&units=metric`;
-    axios.get(url).then(showTemperature);
+    axios.get(url).then(handleResponse);
+    return "Fetching...";
   }
 }
