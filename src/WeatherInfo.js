@@ -2,6 +2,7 @@ import React from "react";
 import FormattedDate from "./FormattedDate";
 
 export default function WeatherInfo(props) {
+  console.log(props.data);
   return (
     <div className="WeatherInfo">
       <div className="row">

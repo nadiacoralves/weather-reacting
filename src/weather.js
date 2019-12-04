@@ -7,7 +7,6 @@ export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
       ready: true,
       date: new Date(response.data.dt * 1000),
@@ -19,7 +18,6 @@ export default function Weather(props) {
       percipitation: 14,
       city: response.data.name,
       description: response.data.weather[0].description
-      //icon: "wi wi- day - sunny display - 1",
     });
   }
 
@@ -60,7 +58,7 @@ export default function Weather(props) {
             </div>
           </div>
         </form>
-        <WeatherInfo info={weatherData} />
+        <WeatherInfo data={weatherData} />
       </div>
     );
   } else {
