@@ -27,7 +27,8 @@ export default function WeatherInfo(props) {
         </div>
         <h3 className="col-12">
           {" "}
-          <span className="min">{Math.round(props.data.min)}°</span>{" "}
+          <span className="min">{Math.round(props.data.min)}°</span>
+          {"  "}
           <span className="max">{Math.round(props.data.max)}°</span>{" "}
         </h3>
         <h4 className="py-3">{props.data.description}</h4>
