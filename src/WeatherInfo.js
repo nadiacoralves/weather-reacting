@@ -22,22 +22,22 @@ export default function WeatherInfo(props) {
         </div>
         <div className="row">
           <h1 className="col-12 py-2" id="temperature">
-            {props.data.temperature}
+            {Math.round(props.data.temperature)}
           </h1>
         </div>
         <h3 className="col-12">
           {" "}
-          <span className="min">{props.data.min}°</span>{" "}
-          <span className="max">{props.data.max}°</span>{" "}
+          <span className="min">{Math.round(props.data.min)}°</span>{" "}
+          <span className="max">{Math.round(props.data.max)}°</span>{" "}
         </h3>
         <h4 className="py-3">{props.data.description}</h4>
       </div>
       <div className="row">
         <div className="col-12">
           <ul>
-            <li>Percepitation: {props.data.percipitation}%</li>
-            <li>Humidity: {props.data.humidity}%</li>
-            <li>Wind:{props.data.wind} km/h</li>
+            <li>Percepitation: {Math.round(props.data.percipitation)}%</li>
+            <li>Humidity: {Math.round(props.data.humidity)}%</li>
+            <li>Wind:{Math.round(props.data.wind)} km/h</li>
           </ul>
         </div>
       </div>
