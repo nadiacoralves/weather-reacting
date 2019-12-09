@@ -10,8 +10,9 @@ export default function WeatherInfo(props) {
           <FormattedDate date={props.data.date} />
         </ul>
       </div>
-      <div className="card bg-transparent">
+      <div className="card-block col ml-25 shadow" style={{ width: "30rem" }}>
         <h1>{props.data.city}</h1>
+        <h4 className="py-3">{props.data.description}</h4>
 
         <div className="row">
           <div className="col-12">
@@ -21,17 +22,17 @@ export default function WeatherInfo(props) {
           </div>
         </div>
         <div className="row">
-          <h1 className="col-12 py-2" id="temperature">
-            {Math.round(props.data.temperature)}
+          <h1 className="col-12" id="temperature">
+            {Math.round(props.data.temperature)}°
           </h1>
         </div>
+        <hr />
         <h3 className="col-12">
           {" "}
-          <span className="min">{Math.round(props.data.min)}°</span>
+          <span className="min col">{Math.round(props.data.min)}</span>
           {"  "}
-          <span className="max">{Math.round(props.data.max)}°</span>{" "}
+          <span className="max col">{Math.round(props.data.max)}</span>{" "}
         </h3>
-        <h4 className="py-3">{props.data.description}</h4>
       </div>
       <div className="row">
         <div className="col-12">

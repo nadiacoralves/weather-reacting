@@ -29,7 +29,7 @@ export default function Weather(props) {
 
   function handlSubmit(event) {
     event.preventDefaul();
-    search(city);
+    search();
   }
 
   function handleCityChange(event) {
@@ -38,7 +38,7 @@ export default function Weather(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="container-md col-4 rounded-lg shadow-lg">
+      <div className="container-md col-4">
         <form onSubmit={handlSubmit}>
           <div className="row">
             <div className="col-7 mt-25px">
