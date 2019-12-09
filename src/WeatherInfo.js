@@ -16,7 +16,7 @@ export default function WeatherInfo(props) {
 
         <div className="row">
           <div className="col-12">
-            <h5 className="py-4">
+            <h5 className="py-1">
               <i className={props.data.icon}></i>
             </h5>
           </div>
