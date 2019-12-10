@@ -47,10 +47,16 @@ export default function Weather(props) {
                 placeholder="Enter city..."
                 className="form-control"
                 onChange={handleCityChange}
+                style={{ borderRadius: "25px" }}
               />
             </div>
             <div className="col-1">
-              <input type="submit" value="Search" className="btn btn-link" />
+              <input
+                type="submit"
+                value="Search"
+                className="btn btn-link"
+                style={{ color: "#cccccc" }}
+              />
             </div>
           </div>
         </form>

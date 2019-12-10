@@ -20,7 +20,7 @@ hr {
 }
 
 .card-block {
-  background-color: rgba(245, 245, 245, 0.02);
+  background-image: linear-gradient(180deg, #243949 0, #58738a);
   border-radius: 10px;
 }
 
@@ -29,7 +29,7 @@ hr {
 }
 
 .container-md {
-  background-image: linear-gradient(180deg, #243949 0, #779dbd);
+  background-color: #243949;
   text-align: center;
   font-family: Nunito Sans, sans-serif;
   font-weight: 200;
@@ -71,11 +71,9 @@ hr {
 .form-control {
   opacity: 0.25;
   display: inline;
-  border-radius: 5px;
   margin: 25px;
 }
 
 .btn {
-  opacity: 0.9;
   margin: 25px;
 }
