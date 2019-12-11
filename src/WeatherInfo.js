@@ -1,5 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props) {
   console.log(props.data);
@@ -14,17 +15,17 @@ export default function WeatherInfo(props) {
         <h1>{props.data.city}</h1>
         <h4 className="py-3">{props.data.description}</h4>
 
+        <div className="row"></div>
         <div className="row">
-          <div className="col-12">
-            <h5 className="py-1">
-              <i className={props.data.icon}></i>
+          <h1 className="col-6" id="temperature">
+            {Math.round(props.data.temperature)}
+            <span className="degreeIcon">°</span>
+          </h1>
+          <div className="col-6">
+            <h5>
+              <WeatherIcon code={props.data.icon} />
             </h5>
           </div>
-        </div>
-        <div className="row">
-          <h1 className="col-12" id="temperature">
-            {Math.round(props.data.temperature)}°
-          </h1>
         </div>
         <hr />
         <h3 className="col-12">
@@ -37,9 +38,18 @@ export default function WeatherInfo(props) {
       <div className="row">
         <div className="col-12">
           <ul>
-            <li>Percepitation: {Math.round(props.data.percipitation)}%</li>
-            <li>Humidity: {Math.round(props.data.humidity)}%</li>
-            <li>Wind:{Math.round(props.data.wind)} km/h</li>
+            <li>
+              <span style={{ color: "#cccccc" }}>Percepitation:</span>{" "}
+              {Math.round(props.data.percipitation)}%
+            </li>
+            <li>
+              <span style={{ color: "#cccccc" }}>Humidity:</span>{" "}
+              {Math.round(props.data.humidity)}%
+            </li>
+            <li>
+              <span style={{ color: "#cccccc" }}>Wind:</span>{" "}
+              {Math.round(props.data.wind)} km/h
+            </li>
           </ul>
         </div>
       </div>

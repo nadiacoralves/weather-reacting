@@ -15,9 +15,10 @@ export default function Weather(props) {
       min: response.data.main.temp_min,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
-      percipitation: 14,
+      percipitation: response.data.main.humidity,
       city: response.data.name,
-      description: response.data.weather[0].description
+      description: response.data.weather[0].description,
+      icon: response.data.weather[0].icon
     });
   }
 
