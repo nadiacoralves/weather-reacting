@@ -13,7 +13,6 @@ export default function WeatherInfo(props) {
       </div>
       <div className="card-block col ml-25 shadow" style={{ width: "30rem" }}>
         <h1>{props.data.city}</h1>
-        <h4 className="py-3">{props.data.description}</h4>
 
         <div className="row"></div>
         <div className="row">
@@ -28,12 +27,14 @@ export default function WeatherInfo(props) {
           </div>
         </div>
         <hr />
-        <h3 className="col-12">
-          {" "}
-          <span className="min col">{Math.round(props.data.min)}</span>
-          {"  "}
-          <span className="max col">{Math.round(props.data.max)}</span>{" "}
-        </h3>
+        <div className="row">
+          <h4 className="col-7 py-2">{props.data.description}</h4>
+          <h3 className="col-4">
+            {" "}
+            <span className="min col">{Math.round(props.data.min)}°</span>
+            <span className="max col">{Math.round(props.data.max)}°</span>{" "}
+          </h3>
+        </div>
       </div>
       <div className="row">
         <div className="col-12">
