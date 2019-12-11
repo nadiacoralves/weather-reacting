@@ -8,6 +8,28 @@ export default function App() {
   return (
     <div>
       <Weather defaultCity="Milton Keynes" />
+      <div
+        class="col-12"
+        style={{
+          position: "inherit",
+          textAlign: "center"
+        }}
+      >
+        <small>
+          <a
+            class="source"
+            href="https://github.com/nadiacoralves/weather-coding"
+            target="_blank"
+            style={{
+              letterSpacing: "4px",
+              fontSize: "10px",
+              color: "#243949"
+            }}
+          >
+            Open source-code, by Nádia Correia Gonçalves.
+          </a>
+        </small>
+      </div>
     </div>
   );
 }
