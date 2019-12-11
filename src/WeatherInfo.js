@@ -39,15 +39,19 @@ export default function WeatherInfo(props) {
         <div className="col-12">
           <ul>
             <li>
-              <span style={{ color: "#cccccc" }}>Percepitation:</span>{" "}
+              <span style={{ color: "#cccccc", fontWeight: "100" }}>
+                Percepitation:
+              </span>{" "}
               {Math.round(props.data.percipitation)}%
             </li>
             <li>
-              <span style={{ color: "#cccccc" }}>Humidity:</span>{" "}
+              <span style={{ color: "#cccccc", fontWeight: "100" }}>
+                Humidity:
+              </span>{" "}
               {Math.round(props.data.humidity)}%
             </li>
             <li>
-              <span style={{ color: "#cccccc" }}>Wind:</span>{" "}
+              <span style={{ color: "#cccccc", fontWeight: "100" }}>Wind:</span>{" "}
               {Math.round(props.data.wind)} km/h
             </li>
           </ul>
