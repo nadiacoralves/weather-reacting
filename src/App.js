@@ -7,7 +7,7 @@ import "weather-icons/css/weather-icons.css";
 export default function App() {
   return (
     <div>
-      <Weather defaultCity="New York" />
+      <Weather defaultCity="Milton Keynes" />
     </div>
   );
 }

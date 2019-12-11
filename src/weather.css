@@ -15,13 +15,15 @@ li {
 }
 
 hr {
-  background-color: #f1f1f1;
+  background-color: #999;
   opacity: 0.4;
 }
 
 .card-block {
   background-color: 0;
   border-radius: 10px;
+  max-height: 300px;
+  min-height: 300px;
 }
 
 .container-md {
@@ -39,7 +41,7 @@ hr {
 }
 
 .container-md h1 {
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
   padding: 14px;
 }
@@ -57,7 +59,10 @@ hr {
 
 .container-md h3 {
   font-size: 25px;
-  padding-bottom: 25px;
+  margin: -10px;
+  padding-top: 14px;
+  float: left;
+  position: relative;
 }
 
 .date {

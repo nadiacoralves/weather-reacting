@@ -12,8 +12,7 @@ export default function WeatherIcon(props) {
         <Sunny />
       </div>
     );
-  }
-  if (props === "09d" || "09n" || "10d" || "10n") {
+  } else if (props === "09d" || "09n" || "10d" || "10n") {
     return (
       <div
         className="icon"
@@ -22,8 +21,7 @@ export default function WeatherIcon(props) {
         <Rain />
       </div>
     );
-  }
-  if (props === "13d" || "13n") {
+  } else if (props === "13d" || "13n") {
     return (
       <div
         className="icon"
