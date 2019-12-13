@@ -30,7 +30,7 @@ export default function WeatherInfo(props) {
       <br />
 
       <div className="row">
-        <h4 className="col-7 py-2">{props.data.description}</h4>
+        <h4 className="col-7">{props.data.description}</h4>
         <h3 className="col-4">
           <span className="min col">{Math.round(props.data.min)}°</span>
           <span className="max col">{Math.round(props.data.max)}°</span>
