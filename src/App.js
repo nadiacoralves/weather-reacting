@@ -18,7 +18,7 @@ export default function App() {
         <small>
           <a
             class="source"
-            href="https://github.com/nadiacoralves/weather-coding"
+            href="https://github.com/nadiacoralves/weather-reacting"
             target="_blank"
             style={{
               letterSpacing: "4px",
