@@ -95,8 +95,7 @@ btn:hover {
   .container-md {
     max-height: 600px;
     min-height: 600px;
-    width: 300px;
-    padding: 50px;
+    margin: 25px, 100px, 50px, 100px;
   }
   .container-md h3 {
     font-size: 25px;
