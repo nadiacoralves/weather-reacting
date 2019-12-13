@@ -7,7 +7,7 @@ import "weather-icons/css/weather-icons.css";
 export default function App() {
   return (
     <div>
-      <Weather defaultCity="Milton Keynes" />
+      <Weather defaultCity="New York" />
       <div
         class="col-12"
         style={{
