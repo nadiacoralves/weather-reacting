@@ -12,6 +12,7 @@ ul {
 
 li {
   text-decoration: none;
+  color: rgb(175, 175, 175);
 }
 
 hr {
@@ -27,7 +28,7 @@ hr {
 }
 
 .container-md {
-  background-image: linear-gradient(180deg, #243949 0, #517fa4);
+  background-image: linear-gradient(180deg, #243949 0, rgba(65, 65, 65, 0));
   text-align: center;
   font-family: Nunito Sans, sans-serif;
   font-weight: 400;

@@ -36,7 +36,7 @@ export default function WeatherInfo(props) {
           <span className="max col">{Math.round(props.data.max)}°</span>
         </h3>
       </div>
-      <hr style={{ backgroundColor: "#f1f1f1" }} />
+      <hr style={{ backgroundColor: "#afafaf" }} />
       <div className="row">
         <div className="col-12">
           <ul>
