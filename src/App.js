@@ -23,9 +23,7 @@ export default function App() {
             style={{
               letterSpacing: "4px",
               fontSize: "9px",
-              color: "#243949",
-              padding: "0",
-              margin: "0"
+              color: "#243949"
             }}
           >
             Open source-code, by Nádia Correia Gonçalves.
