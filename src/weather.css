@@ -7,7 +7,7 @@ li {
 }
 
 ul {
-  margin: 0;
+  margin-bottom: -25px;
 }
 
 li {
@@ -36,6 +36,7 @@ hr {
   margin: 25px auto;
   min-width: 350px;
   max-width: 350px;
+  max-height: 634px;
   box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
@@ -55,11 +56,12 @@ hr {
   font-size: 2em;
   text-transform: capitalize;
   font-weight: 400;
+  padding-top: 1rem;
 }
 
 .container-md h3 {
   font-size: 25px;
-  margin: -10px;
+
   padding-top: 14px;
   float: left;
   position: relative;
