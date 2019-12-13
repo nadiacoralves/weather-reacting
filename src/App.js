@@ -22,7 +22,7 @@ export default function App() {
             target="_blank"
             style={{
               letterSpacing: "4px",
-              fontSize: "10px",
+              fontSize: "9px",
               color: "#243949"
             }}
           >
