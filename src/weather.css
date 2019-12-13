@@ -36,7 +36,7 @@ hr {
   color: #f1f1f1;
   margin: 25px auto;
   min-width: 360px;
-
+  min-height: 100px;
   box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
