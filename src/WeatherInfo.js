@@ -32,8 +32,12 @@ export default function WeatherInfo(props) {
       <div className="row">
         <h4 className="col-7">{props.data.description}</h4>
         <h3 className="col-4">
-          <span className="min col">{Math.round(props.data.min)}°</span>
-          <span className="max col">{Math.round(props.data.max)}°</span>
+          <span className="min col" style={{ fontWeight: "100" }}>
+            {Math.round(props.data.min)}°
+          </span>
+          <span className="max col" style={{ fontWeight: "800" }}>
+            {Math.round(props.data.max)}°
+          </span>
         </h3>
       </div>
       <hr style={{ backgroundColor: "#afafaf" }} />
