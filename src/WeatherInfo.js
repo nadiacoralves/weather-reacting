@@ -42,7 +42,7 @@ export default function WeatherInfo(props) {
       </div>
       <hr style={{ backgroundColor: "#afafaf" }} />
       <div className="row">
-        <div className="col-12">
+        <div className="col-10">
           <ul>
             <li>
               <span style={{ color: "#bdbdbd", fontWeight: "100" }}>
