@@ -12,16 +12,19 @@ export default function WeatherIcon(props) {
         <Sunny />
       </div>
     );
-  } else if (props === "09d" || "09n" || "10d" || "10n") {
-    return (
-      <div
-        className="icon"
-        style={{ fontSize: "0.5em", margin: "1em", position: "relative" }}
-      >
-        <Rain />
-      </div>
-    );
-  } else if (props === "13d" || "13n") {
+  } else {
+    if (props === "09d" || "09n" || "10d" || "10n") {
+      return (
+        <div
+          className="icon"
+          style={{ fontSize: "0.5em", margin: "1em", position: "relative" }}
+        >
+          <Rain />
+        </div>
+      );
+    }
+  }
+  if (props === "13d" || "13n") {
     return (
       <div
         className="icon"
