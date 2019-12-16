@@ -9,7 +9,7 @@ export default function App() {
     <div>
       <Weather defaultCity="New York" />
       <div
-        class="col-12"
+        className="col-12"
         style={{
           position: "inherit",
           textAlign: "center"
@@ -19,9 +19,8 @@ export default function App() {
         <br />
         <small>
           <a
-            class="source"
+            className="source"
             href="https://github.com/nadiacoralves/weather-reacting"
-            target="_blank"
             style={{
               letterSpacing: "4px",
               fontSize: "9px",
