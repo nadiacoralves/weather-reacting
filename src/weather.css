@@ -82,11 +82,6 @@ btn:hover {
   color: #243949;
 }
 
-.degreeIcon {
-  font-weight: 100;
-  font-size: 1em;
-}
-
 #temperature {
   font-size: 10em;
   font-weight: 500;

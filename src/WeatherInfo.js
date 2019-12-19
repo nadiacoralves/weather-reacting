@@ -30,8 +30,8 @@ export default function WeatherInfo(props) {
       <br />
 
       <div className="row">
-        <h4 className="col-7">{props.data.description}</h4>
-        <h3 className="col-4">
+        <h4 className="col-6">{props.data.description}</h4>
+        <h3 className="col-6">
           <span className="min col" style={{ fontWeight: "100" }}>
             {Math.round(props.data.min)}°
           </span>
