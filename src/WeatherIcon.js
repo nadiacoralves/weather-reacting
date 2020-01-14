@@ -16,7 +16,7 @@ export default function WeatherIcon(props) {
     return (
       <div
         className="icon"
-        style={{ fontSize: "0.5em", margin: "1em", position: "relative" }}
+        style={{ fontSize: "0.5em", margin: "1em", position: "relative", background: "none" }}
       >
         <Rain />
       </div>
