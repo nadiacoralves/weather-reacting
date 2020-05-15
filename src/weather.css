@@ -38,6 +38,7 @@ hr {
   margin: 25px auto;
   min-width: 325px;
   max-height: 650px;
+  max-width: 24rem;
   box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
