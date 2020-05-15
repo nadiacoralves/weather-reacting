@@ -83,7 +83,7 @@ btn:hover {
 }
 
 .fQuOeK {
-  background: none;
+  background: none !important;
 }
 
 #temperature {
