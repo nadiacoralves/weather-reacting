@@ -12,7 +12,7 @@ export default function App() {
         className="col-12"
         style={{
           position: "inherit",
-          textAlign: "center"
+          textAlign: "center",
         }}
       >
         <br />
@@ -24,10 +24,10 @@ export default function App() {
             style={{
               letterSpacing: "4px",
               fontSize: "9px",
-              color: "#243949"
+              color: "#243949",
             }}
           >
-            Open source-code, by Nádia Correia Gonçalves.
+            Designed and coded, by Nádia Correia Gonçalves.
           </a>
         </small>
       </div>
